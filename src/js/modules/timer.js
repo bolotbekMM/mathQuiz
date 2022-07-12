@@ -20,10 +20,9 @@ export function timer() {
       let sec = gameTime.s;
       t = hr * 3600 + min * 60 + sec;
       total = t;
-      console.log(total, "total");
       timerTime();
     }
-    
+
     function timerTime() {
       t = t - 1;
       let temp = t;

@@ -1,16 +1,16 @@
+const goBtn = document.querySelector("#go");
+const elem = document.querySelector(".game__math-box");
 const num1 = document.querySelector(".game__math-num1");
 const num2 = document.querySelector(".game__math-num2");
-const operator = document.querySelector(".game__math-operator");
-const result = document.querySelector(".game__math-result");
-const goBtn = document.querySelector("#go");
-const winElement = document.querySelector(".game__score p");
-const currentGamerName = document.getElementById("currentGamerName");
-const stopGameBtn = document.getElementById("stopGameBtn");
-const getCurrentGamer = JSON.parse(localStorage.getItem("currentGamerInfo"));
-const elem = document.querySelector(".game__math-box");
-const onePlus = document.querySelector(".floating__score-plus");
-const oneMinus = document.querySelector(".floating__score-minus");
 const gameScore = document.querySelector(".game__score");
+const stopGameBtn = document.getElementById("stopGameBtn");
+const result = document.querySelector(".game__math-result");
+const winElement = document.querySelector(".game__score p");
+const onePlus = document.querySelector(".floating__score-plus");
+const operator = document.querySelector(".game__math-operator");
+const oneMinus = document.querySelector(".floating__score-minus");
+const currentGamerName = document.getElementById("currentGamerName");
+const getCurrentGamer = JSON.parse(localStorage.getItem("currentGamerInfo"));
 
 let win = 0;
 let correctQty = 0;
@@ -54,31 +54,23 @@ export function quiz() {
   };
 
   const renderExample = (data) => {
-    // elem.classList.add("game__math-box-move_right");
     num1 ? (num1.textContent = data.num1) : null;
     num2 ? (num2.textContent = data.num2) : null;
     operator ? (operator.textContent = data.operator) : null;
   };
 
-  // setTimeout(() => {
-  //   elem.classList.remove("game__math-box-move_right");
-  // }, 700);
-
   let example = generateExample();
   renderExample(example);
 
   function correctQuantityFunc() {
-    displayScorePlusAndMinus(onePlus);
+    addAndRemoveClassFunc(onePlus, "floating__score-displaying");
     correctQty += 1;
     win += 1;
   }
 
   function falseQuantityFunc() {
-    displayScorePlusAndMinus(oneMinus);
-    gameScore.classList.add("addAnimationToScore");
-    setTimeout(() => {
-      gameScore.classList.remove("addAnimationToScore");
-    }, 1000);
+    addAndRemoveClassFunc(oneMinus, "floating__score-displaying");
+    addAndRemoveClassFunc(gameScore, "addAnimationToScore");
     falseQuantity++;
     win -= 1;
   }
@@ -94,16 +86,18 @@ export function quiz() {
           falseQuantityFunc();
         }
         elem.classList.remove("game__math-box-move_right");
-        myMove("game__math-box-move_left");
+        addAndRemoveClassFunc(elem, "game__math-box-move_left");
+
         winElement.textContent = win;
 
         result.value = "";
+        
         setTimeout(() => {
           elem.classList.add("game__math-box-move_right");
           example = generateExample();
           renderExample(example);
           console.log(this.value);
-        }, 700);
+        }, 300);
 
         getCurrentGamer.score = win;
       }
@@ -134,15 +128,10 @@ export function addCurrGamerToLeaderboard() {
   });
   localStorage.setItem("gamerInfo", JSON.stringify(getLeaderboard));
 }
-function myMove(params) {
-  elem.classList.add(params);
+
+function addAndRemoveClassFunc(element, className) {
+  element.classList.add(className);
   setTimeout(() => {
-    elem.classList.remove(params);
-  }, 700);
-}
-function displayScorePlusAndMinus(params) {
-  params.classList.add("floating__score-displaying");
-  setTimeout(() => {
-    params.classList.remove("floating__score-displaying");
-  }, 700);
+    element.classList.remove(className);
+  }, 300);
 }
