@@ -71,7 +71,8 @@
 }
 .leaderboard__lists ul{
     width: 40vw;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding-right: 30px;
 }
 
