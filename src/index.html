@@ -1,0 +1,107 @@
+<html lang="en">
+  <!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="registration">
+      <div class="registration__container">
+        <div class="registration__image">
+          <h1>MATH QUIZ</h1>
+          <img src="./assets/earth.svg" alt="earth" />
+        </div>
+        <div class="registration__content">
+          <form id="registration-form">
+            <div class="registration__title">
+              <h3>Hello Gamer!</h3>
+              <h3>Tell us your name?</h3>
+            </div>
+            <div class="registartion__input-box">
+              <input
+                id="enteredName"
+                type="text"
+                class="registration__input"
+                placeholder="Name"
+                autocomplete="off"
+              />
+              <p class="registration__textError">Please Enter your name*</p>
+            </div>
+            <p class="registration__text">Choose your game mode:</p>
+            <div class="registration__buttons">
+              <div class="mode-button">
+                <div class="radio-btn">
+                  <input
+                    class="radio__button"
+                    type="radio"
+                    id="practice"
+                    name="game-mode"
+                    value="practice"
+                    checked
+                  />
+                  <label class="radio-btn__practice" for="practice"
+                    >Practice</label
+                  >
+                </div>
+
+                <div class="radio-btn">
+                  <input
+                    class="radio__button"
+                    type="radio"
+                    id="time-attack"
+                    name="game-mode"
+                    value="time-attack"
+                  />
+                  <label class="radio-btn__time-attack" for="time-attack"
+                    >Time Attack</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="registration__bottom-buttons">
+              <a href="" class="registration__start-href">
+                <button type="submit" class="registration__start-btn">
+                  START
+                </button>
+              </a>
+              <a href="#" role="button" class="registration__rules">
+                don’t know rules? clicke here!
+              </a>
+              <a href="leaderBoard.html" class="registration__leaderboard"
+                >LEADERBOARD</a
+              >
+            </div>
+          </form>
+        </div>
+        <div class="modal__rule">
+          <div class="modal__rule-box">
+            <div class="modal__rule-container">
+              <img src="./assets/x.svg" alt="x" class="modal__close-btn" />
+              <h2>Rule of GAME</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto ullam eum obcaecati neque quidem fugiat alias eius
+                vitae, amet temporibus blanditiis. Incidunt quod voluptate amet,
+                est eius soluta suscipit itaque?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto ullam eum obcaecati neque quidem fugiat alias eius
+                vitae, amet temporibus blanditiis. Incidunt quod voluptate amet,
+                est eius soluta suscipit itaque?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto ullam eum obcaecati neque quidem fugiat alias eius
+                vitae, amet temporibus blanditiis. Incidunt quod voluptate amet,
+                est eius soluta suscipit itaque?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

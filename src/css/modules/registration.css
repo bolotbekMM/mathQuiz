@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Fredoka+One&family=Inter&family=Lato&family=Montserrat:wght@400;700&family=Open+Sans:wght@600&family=Poppins:wght@100;200;300&family=Roboto&family=Varela+Round&display=swap');
+
+.registration{
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    background-color: #235390;
+    background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
+
+}
+.registration__container{
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.registration__image{
+    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+.registration__image h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    color: rgba(20, 159, 240, 0.623);
+}
+
+
+.registration__content{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.registration__title h3{
+    font-family: "FF DIN Round","sans-serif";
+    margin: 0px;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFF;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+.registartion__input-box{
+    position: relative;
+}
+.registration__input{
+    margin: 26px 0px 33px;
+    background: none;
+    background: #ffffff18;
+    padding: 10px 35px;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid #fff;
+    border-radius: 15px;
+    font-size: 28px;
+    line-height: 45px;
+    font-family: "FF DIN Round","sans-serif";
+    color: #FFF;
+    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40); */
+
+}
+
+.registration__input::placeholder{
+    font-family: "FF DIN Round","sans-serif";
+    color: rgba(255, 255, 255, 0.274);
+    font-style: normal;
+}
+.registration__input-error{
+    border: 4px solid rgb(233, 106, 106);
+}
+
+.registration__textError{
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    color: rgb(233, 106, 106);
+    display: none;
+}
+.registration__textError-allow{
+    display: block;
+}
+.registration__text{
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0px;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+    
+}
+
+.registration__buttons button{
+    display: flex;
+    justify-content: center;
+    width: 279px;
+    background: #ffffff09;
+    border: 3px solid #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+    border-radius: 15px;
+    padding: 15px 0px;
+    cursor: pointer;
+
+
+    font-family: "FF DIN Round","sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    color: #FFF;;
+}
+.registration__buttons-timeattack{
+    background: #2cb3f1 !important;
+    border: 1px solid #2cb3f1 !important;
+    margin-left: 39px;
+
+}
+
+.mode-button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+	position: relative;
+	/* margin: 0px 0px 25px 0px; */
+    margin: 21px 0px 33px;
+	font-size: 16px;
+    line-height: 24px;
+
+}
+
+
+.radio-btn label{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 5px 11px;
+    padding: 15px 0px;
+
+    width: 230px;
+    background: #ffffff09;
+    border: 3px solid #fff;
+    
+    border-radius: 15px;
+    cursor: pointer;
+
+
+    font-family: "FF DIN Round","sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    color: #FFF;;
+}
+.radio-btn label:hover{
+    border-color: rgba(255, 255, 255, 0.288);
+    /* color:rgba(255, 255, 255, 0.288) ; */
+}
+
+
+.radio-btn input {
+    display: none;
+}
+
+.radio-btn input:checked + .radio-btn__practice {
+    background: #83b3f1;
+}
+
+.radio-btn input:checked + .radio-btn__time-attack {
+    background:#83b3f1;
+} 
+
+
+/* ------------------- */
+.registration__bottom-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__start-btn{
+    width: 492px;
+    background: #58cc02;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+
+    font-family: "FF DIN Round","sans-serif";
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.registration__start-btn:hover{
+    transition: all 0.3s;
+    background: #479b06;
+   
+}
+.registration__rules{
+    display: inline;
+    display: flex;
+    margin: 30px 0px 30px;
+    background: none;
+    outline: none;
+    border: none;
+    font-family: "FF DIN Round","sans-serif";
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+
+}
+
+
+
+
+.registration__leaderboard{
+    font-family: "FF DIN Round","sans-serif";
+    font-size: 30px;
+    line-height: 31px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+
+.registration__rules:hover, .registration__leaderboard:hover{
+   color: #ffffffa4;
+}
+@media (max-width: 1200.98px) { 
+    
+    .registration__input{
+        margin: 20px 0px 26px;
+        padding: 15px 25px;
+        font-size: 26px;
+        line-height: 33px;
+        width: 80%;
+    }
+
+    .radio-btn label{
+        width: 22vw;
+        padding: 15px 0px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .registration__textError{
+        top: 95px;
+    }
+    
+}
+@media (max-width: 992.98px) { 
+    .radio-btn label{
+        width: 202px;
+        padding: 15px 0px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .registration__start-btn{
+        width: 443px;
+    }
+    .registration__input{
+        width: 443px !important;
+        box-sizing: border-box;
+       
+    }
+    .registration__image{
+        display: none;
+        /* width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px; */
+
+    }
+    /* .registration__image h1{
+        font-size: 20px;
+    }
+
+    .registration__image img{
+        width: 40px;
+        height: 40px;
+       
+
+    }
+    .registration__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    } */
+}
+
+@media (max-width: 576.98px) {
+    
+    .registration__container{
+        width: 100vw;
+    }
+    .mode-button{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 15px;
+        align-items: center;
+
+    }
+    .radio-btn label{
+        /* width: 100%; */
+        margin: 10px 0;
+    }
+    .registration__start-btn{
+        width: 100% !important;
+    }
+    .registration__start-href{
+        width: 100%;
+        margin-top: 10px;
+
+    }
+    .registration__input{
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    .registration__image{
+        display: none;
+    }
+    .registration__title h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .registration__text{
+        font-size: 24px;
+        line-height: 28px;
+    
+        
+    }
+    
+}
+@media (max-height: 620.98px) {
+    .registration__start-btn{
+        padding: 10px 40px;
+    }
+    .registration__rules{
+        margin: 15px 0px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .registration__leaderboard{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .registration{
+        overflow-y:scroll ;
+    }
+    
+   
+    
+}

@@ -1,0 +1,365 @@
+.game{
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #235390;
+    background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
+}
+
+.game__container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 30px;
+}
+.game__timer-box{
+    opacity: 1;
+}
+.game__timer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:  5vh 0;
+}
+
+.game__timer-close{
+    opacity: 0;
+}
+.game__timer h5{
+    font-family: "FF DIN Round","sans-serif";
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+
+.outer__line{
+    width: 50vw;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 10px;
+    margin: 0px 25px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+.inner__line{
+    width: 50vw;
+    height: 15px;
+    background-color: rgba(255, 217, 0, 0.856);
+    border-radius: 10px;
+    /* transition: 90s ease-in-out; */
+
+}
+.game__level{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.game__level h3{
+   font-size: 26px;
+   text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+#currentGamerName{
+    font-size: 30px;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+
+}
+.level__part{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+
+}
+.game__level h5{
+    font-size: 16px;
+    margin-right: 2vw;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+ }
+
+ .level__part button{
+    padding: 10px 20px 12px;
+    background: #58cc02;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+
+    font-family: "FF DIN Round","sans-serif";
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+.level__part button:hover{
+    transition: all 0.3s;
+    background: #479b06;
+   
+}
+
+.game__math{
+   
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.game__math-box{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+   
+}
+.game__math-box-move_left{
+    /* transform: translate(-100vw,0);
+    -webkit-transform: translate(-100vw,0); 
+    -o-transform: translate(-100vw,0); 
+    -moz-transform: translate(-100vw,0);  */
+    animation: leftSide 0.7s ease-in-out;
+
+}
+@keyframes leftSide{
+    from {
+        opacity: 1;
+        left: 0;
+    }
+    to{
+        opacity: 0;
+        left: -130vw;
+    }
+}
+
+
+.game__math-box-move_right{
+    /* transform: translateX(-350px, 350px) ; */
+    /* transform: translate(900px, 0) ;
+    -webkit-transform: translate(900px, 0);
+    -o-transform: translate(900px , 0);
+    -moz-transform: translate(900px, 0) ; */
+    animation: rightSide 1s ease-in-out;
+    
+}
+
+
+
+
+@keyframes rightSide{
+    from {
+        opacity: 0.2;
+        right: -100vw;
+    }
+    to{
+        opacity: 1;
+        right: 28%;
+    }
+}
+
+
+
+.game__math-box p, span{
+    font-family: "FF DIN Round","sans-serif";
+    font-size: 100px;
+    color: #FFFFFF;
+    margin: 15px;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+.game__math-result{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    width: 170px;
+    height: 170px;
+    border: 4px solid #fff;
+    border-radius: 15px;
+    background: none;
+    outline: none;
+    padding: 0px;
+
+    font-family: "FF DIN Round","sans-serif";
+    font-size: 100px;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+
+}
+
+.floating__score{
+    position: relative;
+}
+
+.floating__score-plus{
+    position: absolute;
+    font-size: 50px;
+    color: #58cc02;
+    animation: plusScore 1s ease-in-out;
+    display: none;
+}
+.floating__score-minus{
+    position: absolute;
+    font-size: 50px;
+    color: red;
+    animation: plusScore 1s ease-in-out;
+    display: none;
+}
+.floating__score-displaying{
+    display: block;
+}
+
+
+@keyframes plusScore{
+    from {
+        opacity: 1;
+        top: 100px;
+    }
+    
+    to{
+        opacity: 0;
+        top: 0;
+    }
+}
+
+.game__score{
+    position: absolute;
+    /* left: 50%; */
+    bottom: 5%;
+    /* transform: translateX(-50%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addAnimationToScore{
+    animation: shakeScore 1s ease-in-out;
+
+}
+
+.game__score h3{
+    font-size: 46px;
+    line-height: 46px;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+.game__score p{
+    font-size: 100px;
+    line-height: 105px;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+
+.game__score span{
+    font-size: 35px;
+    line-height: 38px;
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
+}
+
+@keyframes shakeScore{
+    from {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    90% {
+        transform: rotate(5deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+@media (max-width: 699.98px) {
+    .game__math-box p, span{
+        font-size: 80px;
+        margin: 10px;
+    }
+
+    .game__math-result{
+        width: 130px;
+        height: 130px;
+        font-size: 80px;
+    
+    }
+
+}
+@media (max-width: 557.98px) {
+    .game__math-box p, span{
+        font-size: 50px;
+        margin: 5px;
+    }
+
+    .game__math-result{
+        width: 90px;
+        height: 90px;
+        font-size: 50px;
+    
+    }
+
+    .game__score h3{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .game__score p{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    
+    .game__score span{
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .game__level{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .level__part{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 15px;
+    
+    }
+
+}

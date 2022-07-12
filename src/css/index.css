@@ -1,0 +1,24 @@
+@import url("//db.onlinewebfonts.com/c/3ecce11ea34c149bb63c0c2ba1cc131d?family=FF+DIN+Round");
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&family=Lato&family=Montserrat:wght@400;700&family=Open+Sans:wght@600&family=Poppins:wght@100;200;300&family=Roboto&display=swap');
+@import './modules/registration.css';
+@import './modules/game.css';
+@import './modules/game-over-modal.css';
+@import './modules/leaderBoard.css';
+@import './modules/modalRule.css';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    font-family: "FF DIN Round","sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    color: #FFF;
+}
+body{
+    min-height: 500px;
+
+}
+
+
+

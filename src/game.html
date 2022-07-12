@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="game__container">
+          <div class="game__level">
+            <div>
+              <h3>Have fun, <span id="currentGamerName"></span></h3>
+            </div>
+            <div class="level__part">
+              <h5>Level 1</h5>
+              <a href="timesUp.html" id="stopGameBtn">
+                <button>Stop game</button>
+              </a>
+            </div>
+          </div>
+        <div class="game__timer-box">
+          <div class="game__timer">
+            <h5>Time left:</h5>
+            <div class="outer__line"><div class="inner__line"></div></div>
+            <h5 class="game__timer-counter">0:00</h5>
+          </div>
+        </div>
+       
+        <div class="game__math">
+          <div class="game__math-box">
+            <p class="game__math-num1">15</p>
+            <span class="game__math-operator">+</span>
+            <p class="game__math-num2">25</p>
+            <span>=</span>
+            <input type="number" class="game__math-result" id="go" autofocus></input>
+          </div>
+        </div>
+        <div class="floating__score">
+          <p class="floating__score-plus">+1</p>
+          <p class="floating__score-minus">-1</p>
+        </div>
+        <div class="game__score">
+          <h3>Your score:</h3>
+          <p>0</p>
+          <span>Keep going!</span>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
