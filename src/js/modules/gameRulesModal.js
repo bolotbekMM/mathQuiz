@@ -1,7 +1,6 @@
 const openModalBtn = document.querySelector(".registration__rules");
 const closeModalBtn = document.getElementsByClassName("modal__close-btn")[0];
 const modalClass = document.querySelector(".modal__rule");
-console.log(openModalBtn , "openModalBtn");
 
 export function modal() {
   openModalBtn &&

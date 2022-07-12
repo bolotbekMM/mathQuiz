@@ -2,7 +2,6 @@ let form = document.getElementById("registration-form");
 let input = document.getElementById("enteredName");
 const gameMode = document.getElementsByClassName("radio__button");
 const getCurrentGamer = JSON.parse(localStorage.getItem("currentGamerInfo"));
-console.log(input, "inpur");
 
 function inputValidationFunc() {
   if (input.value.trim().length == 0) {
@@ -28,7 +27,6 @@ export function validation() {
         window.location.href = "./game.html";
         currentGamerFunc();
         addGamerData();
-        // clearEnteredInput();
       }
     });
 }
@@ -68,9 +66,4 @@ function addGamerData() {
     storageData.push(gamer);
     localStorage.setItem("gamerInfo", JSON.stringify(storageData));
   }
-  // localStorage.clear();
 }
-
-// function clearEnteredInput() {
-//   input ? (input.textContent = "") : null;
-// }

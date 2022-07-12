@@ -12,7 +12,7 @@ export function leaderboard() {
 
     if (getCurrentGamer) {
       if (getCurrentGamer.gameMode) {
-        selectedMode = storageData.filter(
+        selectedMode = storageData?.filter(
           (item) => item.gameMode == getCurrentGamer.gameMode
         );
       }
@@ -23,12 +23,14 @@ export function leaderboard() {
         }
       });
 
-      sortScoreFunc(selectedMode);
-      addListsToHTMLPageFunc(selectedMode);
+      if (selectedMode) {
+        sortScoreFunc(selectedMode);
+        addListsToHTMLPageFunc(selectedMode);
+      }
     }
 
     select.addEventListener("change", () => {
-      const selectedMode = storageData.filter(
+      const selectedMode = storageData?.filter(
         (item) => item.gameMode == select.value
       );
 
@@ -54,17 +56,17 @@ function addListsToHTMLPageFunc(data) {
   ul.innerHTML = "";
 
   data.forEach((element) => {
-    if (element.score > 0) {
-      let li = document.createElement("li");
-      let p = document.createElement("p");
-      let span = document.createElement("span");
+    // if (element.score > 0) {
+    let li = document.createElement("li");
+    let p = document.createElement("p");
+    let span = document.createElement("span");
 
-      p.textContent = element.name;
-      span.textContent = element.score;
+    p.textContent = element.name;
+    span.textContent = element.score;
 
-      ul.appendChild(li);
-      li.appendChild(p);
-      li.appendChild(span);
-    }
+    ul.appendChild(li);
+    li.appendChild(p);
+    li.appendChild(span);
+    // }
   });
 }
