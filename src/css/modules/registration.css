@@ -42,7 +42,7 @@
 
 }
 .registration__title h3{
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     margin: 0px;
     font-size: 50px;
     line-height: 61px;
@@ -63,14 +63,14 @@
     border-radius: 15px;
     font-size: 28px;
     line-height: 45px;
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     color: #FFF;
     /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40); */
 
 }
 
 .registration__input::placeholder{
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     color: rgba(255, 255, 255, 0.274);
     font-style: normal;
 }
@@ -108,7 +108,7 @@
     cursor: pointer;
 
 
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -153,7 +153,7 @@
     cursor: pointer;
 
 
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -194,7 +194,7 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.40);
     cursor: pointer;
 
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     font-size: 30px;
     line-height: 48px;
     color: #FFFFFF;
@@ -211,7 +211,7 @@
     background: none;
     outline: none;
     border: none;
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
@@ -224,7 +224,7 @@
 
 
 .registration__leaderboard{
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     font-size: 30px;
     line-height: 31px;
     color: #FFFFFF;

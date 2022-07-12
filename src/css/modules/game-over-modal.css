@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 3%;
 
 }
 .back-to-menu{
@@ -48,7 +48,7 @@
 .back-to-menu p{
     font-size: 26px;
     line-height: 30px;
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
 }
 .myModal__main{
     display: flex;
@@ -58,7 +58,7 @@
 .myModal__main h3{
     font-size: 70px;
     line-height: 85px;
-    margin: 41px 0px 27px ;
+    margin: 31px 0px 27px ;
 
 }
 .myModal__main h4{
@@ -70,7 +70,7 @@
 .myModal__main h2{
     font-size: 110px;
     line-height: 134px;
-    margin:0 0 30px ;
+    margin:0  ;
 }
 .myModal__main p{
     font-size: 30px;
@@ -100,7 +100,7 @@
     cursor: pointer;
 
 
-    font-family: "FF DIN Round","sans-serif";
+    font-family: "Varela Round","sans-serif";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
