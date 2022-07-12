@@ -144,5 +144,5 @@ function displayScorePlusAndMinus(params) {
   params.classList.add("floating__score-displaying");
   setTimeout(() => {
     params.classList.remove("floating__score-displaying");
-  }, 1000);
+  }, 700);
 }
