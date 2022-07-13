@@ -204,7 +204,7 @@
 
 .floating__score-plus{
     position: absolute;
-    left: 20vh;
+    left: 20vw;
     font-size: 50px;
     color: #58cc02;
     animation: plusScore 0.5s ease-in-out;
@@ -212,7 +212,7 @@
 }
 .floating__score-minus{
     position: absolute;
-    left: 20vh;
+    left: 20vw;
     font-size: 50px;
     color: red;
     animation: plusScore 0.5s ease-in-out;
@@ -325,6 +325,13 @@
         font-size: 80px;
     
     }
+    .floating__score-plus{
+        left: 30vw;
+    }
+    .floating__score-minus{
+        left: 30vw;
+    }
+
 
 }
 @media (max-width: 557.98px) {
@@ -367,7 +374,5 @@
         text-align: center;
         justify-content: space-between;
         margin-top: 15px;
-    
     }
-
 }
